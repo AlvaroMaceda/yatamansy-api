@@ -1,4 +1,4 @@
-# Yatamansi API
+# Yatamansy API
 
 [Introduction text about the project. This should be a short summary of the project that explains what it is and why anyone should care about it]
 
@@ -21,7 +21,7 @@ It would be recommendable to have rvm installed.
 To start developing, clone repository and install gems: 
 ```````
 git clone https://github.com/AlvaroMaceda/yatamansy-api.git
-cd yatamansi-api
+cd yatamansy-api
 bundle install
 ```````
 
@@ -32,6 +32,13 @@ rake start
 ```````
 
 (or simply ```````rake ``````` )
+
+### Testing
+
+TO-DO
+```````
+[Testing instructions]
+```````
 
 ### Installation
 TO-DO

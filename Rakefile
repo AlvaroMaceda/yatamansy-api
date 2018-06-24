@@ -15,6 +15,7 @@ end
 #   sh "rerun --background -- rackup config.dev.ru --port #{API_PORT} -o 0.0.0.0"
 # end
 
-# task :tdd do
-#   sh 'rspec'
-# end
+task :test do
+  sh 'rspec'
+end
+

@@ -1,4 +1,4 @@
 require 'sinatra/base'
-require_relative './yatamansi'
+require_relative './yatamansy'
 
 run Yatamansy
