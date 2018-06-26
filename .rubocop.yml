@@ -1,0 +1,14 @@
+AllCops:
+  Exclude:
+    - config.ru
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - spec/*.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

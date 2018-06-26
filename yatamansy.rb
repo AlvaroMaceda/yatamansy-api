@@ -1,6 +1,9 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
+require 'sinatra/json'
 require 'json'
+
+require_relative 'lib/jsend'
 
 require_relative 'endpoints/banana'
 
@@ -12,14 +15,14 @@ class Yatamansy < Sinatra::Base
   configure do
     enable :cross_origin if API_HOST == 'localhost'
     set :bind, API_HOST
-    # set :port, API_PORT
+    set :port, API_PORT
     set :raise_errors, true
     set :show_exceptions, false
   end
 
   before do
     response.headers['Access-Control-Allow-Origin'] = '*'
-    content_type 'application/json'
+    # content_type 'application/json'
   end
 
 

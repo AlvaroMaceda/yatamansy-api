@@ -18,8 +18,11 @@ describe 'Banana Api' do
   context 'retieves the information about the banana' do
     it 'returns the info' do
       get '/banana'
-      retrieved_information = JSON.parse(last_response.body)
-      expect(retrieved_information['banana']).to eq('gross michel')
+      puts last_response.body
+      # retrieved_information = JSON.parse(last_response.body)
+      response = JSend::parse(last_response.body)
+      expect(response.sucess?).to eq(true)
+      expect(response['data']['banana']).to eq('gross michel')
     end
   end
 end

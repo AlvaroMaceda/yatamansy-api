@@ -19,3 +19,9 @@ task :test do
   sh 'rspec'
 end
 
+# Invoke with rake 'tag[yourtag]'
+task :tag, [:tag] do |task, arg|
+  sh "rspec --tag #{arg.tag}"
+end
+
+
