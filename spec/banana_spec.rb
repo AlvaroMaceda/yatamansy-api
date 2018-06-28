@@ -22,7 +22,7 @@ describe 'Banana Api' do
       # retrieved_information = JSON.parse(last_response.body)
       response = JSend::parse(last_response.body)
       expect(response.success?).to eq(true)
-      expect(response['data']['banana']).to eq('gross michel')
+      expect(response.data['banana']).to eq('gross michel')
     end
   end
 end
