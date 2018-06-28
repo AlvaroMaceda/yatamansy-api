@@ -1,5 +1,3 @@
-require_relative '../lib/jsend'
-
 module Endpoints
   class Banana
     def self.define_banana(api)

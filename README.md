@@ -22,6 +22,7 @@ To start developing, clone repository and install gems:
 ```````
 git clone https://github.com/AlvaroMaceda/yatamansy-api.git
 cd yatamansy-api
+gem install bundler
 bundle install
 ```````
 
@@ -32,6 +33,16 @@ rake start
 ```````
 
 (or simply ```````rake ``````` )
+
+#### Developing notes
+
+- To clear all gems in gemset:
+rvm gemset empty yatamansy
+
+- Configure local gems:
+bundle config --local local.jsend path_to/jsend
+
+This will create a .bundle/config file with the configuration. That file is gitignored
 
 ### Testing
 

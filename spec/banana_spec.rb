@@ -4,6 +4,7 @@ require 'net/http'
 require 'rspec'
 require 'json'
 require 'rack/test'
+require 'jsend'
 
 require_relative '../yatamansy'
 
@@ -20,7 +21,7 @@ describe 'Banana Api' do
       get '/banana'
       puts last_response.body
       # retrieved_information = JSON.parse(last_response.body)
-      response = JSend::parse(last_response.body)
+      response = JSend.parse(last_response.body)
       expect(response.success?).to eq(true)
       expect(response.data['banana']).to eq('gross michel')
     end

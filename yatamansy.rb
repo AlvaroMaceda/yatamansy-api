@@ -1,9 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
-require 'sinatra/json'
+# require 'sinatra/json'
 require 'json'
-
-require_relative 'lib/jsend'
 
 require_relative 'endpoints/banana'
 
