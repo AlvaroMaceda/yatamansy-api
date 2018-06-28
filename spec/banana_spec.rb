@@ -21,7 +21,7 @@ describe 'Banana Api' do
       puts last_response.body
       # retrieved_information = JSON.parse(last_response.body)
       response = JSend::parse(last_response.body)
-      expect(response.sucess?).to eq(true)
+      expect(response.success?).to eq(true)
       expect(response['data']['banana']).to eq('gross michel')
     end
   end
