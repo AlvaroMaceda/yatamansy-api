@@ -16,14 +16,25 @@ describe 'Banana Api' do
     Yatamansy
   end
 
-  context 'retieves the information about the banana' do
-    it 'returns the info' do
+  context 'non logged user' do
+
+    it 'returns unauthorized' do
       get '/banana'
-      puts last_response.body
-      # retrieved_information = JSON.parse(last_response.body)
+      jsend_response = JSend.parse(last_response.body)
+      expect(last_response.status).to eq(401)
+      expect(jsend_response.fail?).to eq(true)
+    end
+
+  end
+
+  context 'logged user' do
+
+    it 'retieves the information about the banana' do
+      get '/banana'
       response = JSend.parse(last_response.body)
       expect(response.success?).to eq(true)
       expect(response.data['banana']).to eq('gross michel')
     end
+
   end
 end

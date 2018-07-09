@@ -1,11 +1,10 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
-# require 'sinatra/json'
 require 'json'
 
-require_relative 'endpoints/banana_secure'
+require_relative 'endpoints/banana'
 
-class Yatamansy < Sinatra::Base
+class YatamansyPublic < Sinatra::Base
 
   API_HOST=ENV['API_HOST']
   API_PORT=ENV['API_PORT']
@@ -25,7 +24,7 @@ class Yatamansy < Sinatra::Base
 
 
   get '/' do
-    'patata'
+    'bacalao'
   end
 
   Endpoints::Banana.define_banana(self)

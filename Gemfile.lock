@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/AlvaroMaceda/jsend-ruby
-  revision: 04f667531228c2600fac06c26247186e356aa213
+  revision: 2344867f7aafe0d80974cc0a22b7228bcf11904a
   branch: master
   specs:
     jsend (0.1.0)
