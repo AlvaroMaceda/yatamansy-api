@@ -6,6 +6,6 @@ require_relative './yatamansy_public'
 
 run Rack::URLMap.new(
   {
-    '/public' => YatamansyPublic,
-    '/' => Yatamansy
+    '/' => YatamansyPublic,
+    '/api' => Yatamansy
   })

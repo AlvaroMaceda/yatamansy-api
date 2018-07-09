@@ -4,8 +4,11 @@ require 'sinatra/cross_origin'
 require 'json'
 
 require_relative 'endpoints/banana_secure'
+require_relative 'system/services/authenticator'
 
 class Yatamansy < Sinatra::Base
+
+  use Authenticator
 
   API_HOST=ENV['API_HOST']
   API_PORT=ENV['API_PORT']
