@@ -51,6 +51,9 @@ TO-DO
 [Testing instructions]
 ```````
 
+rake test
+
+
 ### Installation
 TO-DO
 ```````

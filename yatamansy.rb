@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
-# require 'sinatra/json'
 require 'json'
 
 require_relative 'endpoints/banana'
@@ -29,7 +28,5 @@ class Yatamansy < Sinatra::Base
   end
 
   Endpoints::Banana.define_banana(self)
-
-
 
 end

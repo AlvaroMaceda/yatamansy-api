@@ -18,7 +18,15 @@ group :development do
 end
 
 group :test do
+  gem 'cucumber', :require => false
+  # gem 'cucumber-api-steps', :require => false
+  gem 'jsonpath', :require => false
+  gem 'nokogiri', :require => false
+
+  # database_cleaner is not required, but highly recommended
+  # gem 'database_cleaner'
   gem 'factory_bot', "~> 4.0"
+  gem 'nokogiri', :require => false # required by cucumber-api-steps
   gem 'rack-test', '~> 0.8.2'
   gem 'rspec', '~> 3.7.0'
 end
