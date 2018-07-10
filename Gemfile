@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 ruby '>= 2.5.1'
 
-gem 'jsend', :git => 'https://github.com/AlvaroMaceda/jsend-ruby', :branch => 'master'
+#gem 'jsend', :git => 'https://github.com/AlvaroMaceda/jsend-ruby', :branch => 'master'
+gem 'jsend', :path => '../jsend'
 # gem 'jsender', :git => 'https://github.com/hetznerZA/jsender', :branch => 'master'
 gem 'sinatra', '~> 2.0.0'
 # gem 'sinatra-contrib', '~> 2.0.3'

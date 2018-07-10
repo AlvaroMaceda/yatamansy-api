@@ -7,9 +7,14 @@ Feature: Hello Cucumber
 
     # When I send a POST request to "/banana" with the following:
     #  | name | Patata |
-    When I send a GET request to "/banana"
+    When I send a GET request to "/"
     Then the response status should be "200"
-    # And Print response
     And show me the unparsed response
     # And the JSON response should have "$['status']" with the text "success"
     # And the JSON response should have "$['data']['banana']" with the text "gross michel"
+
+  Scenario: A path is defined
+
+    When I send a GET request to "/banana"
+    Then the response status should be "200"
+    And show me the unparsed response

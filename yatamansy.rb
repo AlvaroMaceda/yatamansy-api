@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
 require 'json'
+require 'jsend'
 
 require_relative 'endpoints/banana'
 
@@ -21,7 +22,6 @@ class Yatamansy < Sinatra::Base
     response.headers['Access-Control-Allow-Origin'] = '*'
     # content_type 'application/json'
   end
-
 
   get '/' do
     'patata'
